@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>Ciclo de Vida</h1>
+
+        <p>
+            Todo sistema evolui continuamente, passando por etapas que garantem sua criação, funcionamento e melhoria ao longo do tempo.
+        </p>
+
+        <a href="/contato/" class="botao">
+            Solicitar Projeto
+        </a>
+
+    </div>
+
+</section>
+
+<!-- CICLO (VERSÃO CONCEITUAL E NÃO REPETITIVA) -->
+<section style="display:flex; justify-content:center;">
+
+    <div style="max-width:800px; display:flex; flex-direction:column; gap:35px;">
+
+        <div>
+            <h3>Concepção da Ideia</h3>
+            <p style="color:#cbd5e1;">
+                Todo sistema nasce de uma necessidade. Nesta fase, entendemos o problema e o objetivo da solução.
+            </p>
+        </div>
+
+        <div>
+            <h3>Construção</h3>
+            <p style="color:#cbd5e1;">
+                A ideia começa a ser transformada em software, com definição de estrutura, interface e funcionalidades principais.
+            </p>
+        </div>
+
+        <div>
+            <h3>Validação</h3>
+            <p style="color:#cbd5e1;">
+                O sistema é testado para garantir funcionamento correto, estabilidade e aderência ao que foi proposto.
+            </p>
+        </div>
+
+        <div>
+            <h3>Operação</h3>
+            <p style="color:#cbd5e1;">
+                O sistema entra em uso, sendo disponibilizado para aplicação real e uso contínuo.
+            </p>
+        </div>
+
+        <div>
+            <h3>Evolução</h3>
+            <p style="color:#cbd5e1;">
+                O software nunca é finalizado: ele evolui com melhorias, novas funcionalidades e ajustes contínuos.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

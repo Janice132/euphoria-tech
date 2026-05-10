@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>Nossa Equipe</h1>
+
+        <p>
+            Conheça as desenvolvedoras responsáveis pelos projetos e soluções da Euphoria Tech.
+        </p>
+
+        <a href="/contato/" class="botao">
+            Entrar em Contato
+        </a>
+
+    </div>
+
+</section>
+
+<section style="display:flex; justify-content:center; gap:80px; flex-wrap:wrap; text-align:center;">
+
+    <!-- Bárbara Wmaiara -->
+    <div>
+
+        <img src="{% static 'img/dev1.jpg' %}" class="foto-equipe">
+
+        <h3>Bárbara Wmaiara</h3>
+
+        <p style="color:#cbd5e1; max-width:320px;">
+            Desenvolvedora Full Stack • Analista de Sistemas e Testes<br><br>
+
+            Atua na análise de requisitos, planejamento estrutural do sistema e desenvolvimento das funcionalidades da aplicação.<br><br>
+
+            Também é responsável pelos processos de validação e testes, garantindo qualidade, estabilidade e desempenho das soluções.
+        </p>
+
+    </div>
+
+    <!-- Janice Damos -->
+    <div>
+
+        <img src="{% static 'img/dev2.jpg' %}" class="foto-equipe">
+
+        <h3>Janice Damos</h3>
+
+        <p style="color:#cbd5e1; max-width:320px;">
+            Desenvolvedora Full Stack • UI/UX Designer<br><br>
+
+            Responsável pelo front-end, back-end e criação de interfaces modernas e intuitivas.<br><br>
+
+            Atua na experiência do usuário, prototipação, estrutura visual e implementação das soluções do sistema.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>Euphoria Tech</h1>
+
+        <p>
+            Criamos soluções digitais modernas, funcionais e intuitivas, unindo tecnologia, design e desenvolvimento estratégico.
+        </p>
+
+        <a href="/contato/" class="botao">
+            Fale Conosco
+        </a>
+
+    </div>
+
+</section>
+
+<!-- QUEM SOMOS -->
+<section style="text-align:center; background:#111827;">
+
+    <h2>Quem Somos</h2>
+
+    <p style="max-width:850px; margin:auto; color:#cbd5e1; font-size:18px; line-height:1.7;">
+        Somos uma equipe de desenvolvimento focada em criar soluções digitais completas e eficientes,
+        unindo tecnologia, design e experiência do usuário em cada projeto.
+    </p>
+
+</section>
+
+<!-- O QUE ENTREGAMOS -->
+<section style="text-align:center;">
+
+    <h2>O que entregamos</h2>
+
+    <p style="max-width:850px; margin:auto; color:#cbd5e1; font-size:18px; line-height:1.7;">
+        Desenvolvemos sistemas web, interfaces modernas e soluções digitais personalizadas,
+        sempre com foco em desempenho, organização e usabilidade.
+    </p>
+
+</section>
+
+<!-- WORK -->
+<section style="background:#111827; text-align:center;">
+
+    <h2>work</h2>
+
+    <p style="max-width:800px; margin:auto; color:#cbd5e1; font-size:18px; line-height:1.7;">
+        Alguns projetos e soluções desenvolvidas pela Euphoria Tech.
+    </p>
+
+    <div style="
+        margin-top:50px;
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+        gap:30px;
+        max-width:1200px;
+        margin-left:auto;
+        margin-right:auto;
+    ">
+
+        <!-- PROJETO 1 -->
+        <div class="work-card">
+
+            <img src="{% static 'img/photo1.jpg' %}"
+                 class="work-img"
+                 onclick="openModal(this.src)">
+
+            <div style="padding:25px;">
+
+                <h3>Portal Acadêmico</h3>
+
+                <p style="color:#cbd5e1; margin-top:10px;">
+                    Sistema web desenvolvido para gerenciamento acadêmico e organização de informações.
+                </p>
+
+                <p style="color:#60a5fa; margin-top:15px; font-size:14px;">
+                    Django • HTML • CSS • JavaScript
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PROJETO 2 -->
+        <div class="work-card">
+
+            <img src="{% static 'img/photo2.jpg' %}"
+                 class="work-img"
+                 onclick="openModal(this.src)">
+
+            <div style="padding:25px;">
+
+                <h3>Sistema Empresarial</h3>
+
+                <p style="color:#cbd5e1; margin-top:10px;">
+                    Plataforma voltada para organização de processos e automação de tarefas.
+                </p>
+
+                <p style="color:#60a5fa; margin-top:15px; font-size:14px;">
+                    Python • MySQL • UI/UX
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PROJETO 3 -->
+        <div class="work-card">
+
+            <img src="{% static 'img/photo3.jpg' %}"
+                 class="work-img"
+                 onclick="openModal(this.src)">
+
+            <div style="padding:25px;">
+
+                <h3>Interface Web Moderna</h3>
+
+                <p style="color:#cbd5e1; margin-top:10px;">
+                    Desenvolvimento de interface responsiva com foco em experiência do usuário.
+                </p>
+
+                <p style="color:#60a5fa; margin-top:15px; font-size:14px;">
+                    Front-end • UX/UI • Responsividade
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="/work/" class="botao" style="margin-top:40px; display:inline-block;">
+        Ver Work Completo
+    </a>
+
+</section>
+
+<!-- EQUIPE -->
+<section style="text-align:center; background:#0f172a;">
+
+    <h2>Equipe</h2>
+
+    <p style="color:#cbd5e1; max-width:700px; margin:auto;">
+        Profissionais responsáveis pelo desenvolvimento, design e testes dos sistemas.
+    </p>
+
+    <div style="margin-top:50px; display:flex; justify-content:center; gap:80px; flex-wrap:wrap;">
+
+        <div>
+            <img src="{% static 'img/dev1.jpg' %}" class="foto-equipe">
+            <h3>Bárbara Wmaiara</h3>
+            <p>Full Stack • Testes • Análise</p>
+        </div>
+
+        <div>
+            <img src="{% static 'img/dev2.jpg' %}" class="foto-equipe">
+            <h3>Janice Damos</h3>
+            <p>Full Stack • UI/UX • Front-end</p>
+        </div>
+
+    </div>
+
+    <a href="/equipe/" class="botao" style="margin-top:30px; display:inline-block;">
+        Ver Equipe Completa
+    </a>
+
+</section>
+
+<!-- CTA FINAL -->
+<section style="text-align:center;">
+
+    <h2>Vamos construir algo juntos?</h2>
+
+    <p style="color:#cbd5e1;">
+        Entre em contato e transforme sua ideia em uma solução digital.
+    </p>
+
+    <a href="/contato/" class="botao">
+        Iniciar Projeto
+    </a>
+
+</section>
+
+{% endblock %}

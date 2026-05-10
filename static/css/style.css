@@ -1,0 +1,375 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY - FUNDO ULTRA REFINADO
+========================= */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(168,85,247,0.08), transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(59,130,246,0.06), transparent 55%),
+        radial-gradient(circle at 50% 90%, rgba(96,165,250,0.04), transparent 60%),
+        linear-gradient(180deg, #0b1220 0%, #0e1628 50%, #0a0f1c 100%);
+
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* glow geral mais difuso */
+body::before{
+    content: "";
+    position: fixed;
+    top: -300px;
+    left: -300px;
+    width: 800px;
+    height: 800px;
+
+    background: radial-gradient(circle, rgba(168,85,247,0.10), transparent 70%);
+    filter: blur(70px);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* glow azul mais discreto */
+body::after{
+    content: "";
+    position: fixed;
+    bottom: -300px;
+    right: -300px;
+    width: 850px;
+    height: 850px;
+
+    background: radial-gradient(circle, rgba(59,130,246,0.06), transparent 75%);
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* =========================
+   NAVBAR (GLASSMORPHISM)
+========================= */
+
+.navbar{
+    width: 100%;
+    padding: 18px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+/* LOGO */
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo{
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.06);
+}
+
+.logo-area h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu a{
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #60a5fa;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+
+    padding: 140px 80px 80px 80px;
+}
+
+.hero-texto{
+    max-width: 700px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 35px;
+
+    animation: fadeUp 1s ease forwards;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section{
+    padding: 90px 60px;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1, h2, h3{
+    letter-spacing: -0.6px;
+}
+
+h2{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+p{
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+/* =========================
+   BOTÃO PREMIUM STARTUP
+========================= */
+
+.botao{
+    display: inline-block;
+    padding: 14px 34px;
+
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 14px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.botao:hover{
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.35);
+}
+
+/* =========================
+   CARDS (GLASS + LIFT)
+========================= */
+
+.card,
+.work-card{
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 16px;
+
+    transition: 0.4s;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.card:hover,
+.work-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px rgba(96,165,250,0.12);
+}
+
+/* =========================
+   EQUIPE (FOTO PREMIUM)
+========================= */
+
+.foto-equipe{
+    width:240px;
+    height:240px;
+    object-fit:cover;
+    object-position:center 20%;
+
+    border-radius:50%;
+    border: 3px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+
+    transition:0.3s;
+}
+
+.foto-equipe:hover{
+    transform: scale(1.07);
+    box-shadow: 0 25px 60px rgba(96,165,250,0.25);
+}
+
+/* =========================
+   IMAGENS WORK (ULTRA PREMIUM)
+========================= */
+
+.work-img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    cursor: pointer;
+    transition: 0.45s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.work-img:hover{
+    transform: scale(1.06);
+    box-shadow: 0 20px 50px rgba(96,165,250,0.18);
+    filter: brightness(1.08);
+}
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero{
+        padding: 180px 30px 60px 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 2.8rem;
+    }
+
+    section{
+        padding: 60px 25px;
+    }
+
+    .logo{
+        width: 62px;
+        height: 62px;
+    }
+
+    .logo-area h1{
+        font-size: 1.2rem;
+    }
+}
+
+/* =========================
+   MODAL (já preparado)
+========================= */
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.modal img{
+    max-width: 90%;
+    max-height: 90%;
+
+    border-radius: 16px;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.6);
+
+    animation: fadeUp 0.3s ease;
+}

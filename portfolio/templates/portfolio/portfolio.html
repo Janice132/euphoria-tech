@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>work</h1>
+
+        <p>
+            Projetos desenvolvidos com foco em tecnologia, experiência do usuário e soluções digitais modernas.
+        </p>
+
+        <a href="/contato/" class="botao">
+            Solicitar Projeto
+        </a>
+
+    </div>
+
+</section>
+
+<!-- PROJETO 1 -->
+<section style="display:flex; align-items:center; justify-content:center; gap:70px; flex-wrap:wrap;">
+
+    <div style="flex:1; min-width:320px; max-width:520px;">
+
+        <h2>Sistemas Web</h2>
+
+        <p style="color:#cbd5e1; margin-top:20px; font-size:18px; line-height:1.8;">
+            Desenvolvimento de aplicações modernas com foco em desempenho e experiência do usuário.
+        </p>
+
+    </div>
+
+    <div style="flex:1; min-width:320px; max-width:500px;">
+
+        <img src="{% static 'img/photo1.jpg' %}"
+             class="work-img"
+             style="height:auto;"
+             onclick="openModal(this.src)">
+
+    </div>
+
+</section>
+
+<!-- PROJETO 2 -->
+<section style="display:flex; align-items:center; justify-content:center; gap:70px; flex-wrap:wrap; background:#111827;">
+
+    <div style="flex:1; min-width:320px; max-width:500px;">
+
+        <img src="{% static 'img/photo2.jpg' %}"
+             class="work-img"
+             style="height:auto;"
+             onclick="openModal(this.src)">
+
+    </div>
+
+    <div style="flex:1; min-width:320px; max-width:520px;">
+
+        <h2>UX/UI Design</h2>
+
+        <p style="color:#cbd5e1; margin-top:20px; font-size:18px; line-height:1.8;">
+            Interfaces modernas focadas em experiência do usuário.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- PROJETO 3 -->
+<section style="display:flex; align-items:center; justify-content:center; gap:70px; flex-wrap:wrap;">
+
+    <div style="flex:1; min-width:320px; max-width:520px;">
+
+        <h2>Arquitetura e Desenvolvimento</h2>
+
+        <p style="color:#cbd5e1; margin-top:20px; font-size:18px; line-height:1.8;">
+            Estruturação de sistemas modernos e escaláveis.
+        </p>
+
+    </div>
+
+    <div style="flex:1; min-width:320px; max-width:500px;">
+
+        <img src="{% static 'img/photo3.jpg' %}"
+             class="work-img"
+             style="height:auto;"
+             onclick="openModal(this.src)">
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section style="text-align:center;">
+
+    <h2>Vamos desenvolver algo inovador?</h2>
+
+    <p style="color:#cbd5e1;">
+        Entre em contato e transforme sua ideia em uma solução digital moderna.
+    </p>
+
+    <a href="/contato/" class="botao">
+        Fale Conosco
+    </a>
+
+</section>
+
+{% endblock %}

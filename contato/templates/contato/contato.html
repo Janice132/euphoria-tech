@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>Contato</h1>
+
+        <p>
+            Envie sua ideia ou solicitação. Nossa equipe retornará em breve com uma proposta.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FORMULÁRIO MODERNO -->
+<section style="display:flex; justify-content:center; padding:60px 20px;">
+
+    <form style="
+        width:100%;
+        max-width:650px;
+        display:flex;
+        flex-direction:column;
+        gap:18px;
+        background:rgba(255,255,255,0.03);
+        padding:40px;
+        border-radius:16px;
+        border:1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(10px);
+    ">
+
+        <h2 style="margin-bottom:10px;">Fale com a gente</h2>
+
+        <input type="text" placeholder="Nome completo" style="
+            padding:15px;
+            border-radius:10px;
+            border:1px solid rgba(255,255,255,0.1);
+            background:#0f172a;
+            color:white;
+            outline:none;
+        ">
+
+        <input type="email" placeholder="E-mail" style="
+            padding:15px;
+            border-radius:10px;
+            border:1px solid rgba(255,255,255,0.1);
+            background:#0f172a;
+            color:white;
+            outline:none;
+        ">
+
+        <input type="text" placeholder="Telefone (opcional)" style="
+            padding:15px;
+            border-radius:10px;
+            border:1px solid rgba(255,255,255,0.1);
+            background:#0f172a;
+            color:white;
+            outline:none;
+        ">
+
+        <textarea rows="6" placeholder="Descreva seu projeto" style="
+            padding:15px;
+            border-radius:10px;
+            border:1px solid rgba(255,255,255,0.1);
+            background:#0f172a;
+            color:white;
+            outline:none;
+            resize:none;
+        "></textarea>
+
+        <button type="submit" class="botao" style="width:100%;">
+            Enviar Mensagem
+        </button>
+
+    </form>
+
+</section>
+
+{% endblock %}

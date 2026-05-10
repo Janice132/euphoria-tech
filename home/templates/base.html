@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Euphoria Tech</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo-area">
+
+            <img src="{% static 'img/logo.png' %}"
+                 alt="Euphoria Tech"
+                 class="logo">
+
+            <h1>Euphoria Tech</h1>
+
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/equipe/">Equipe</a></li>
+                <li><a href="/processos/">Processos</a></li>
+                <li><a href="/ciclo-vida/">Ciclo de Vida</a></li>
+                <li><a href="/work/">Works</a></li>
+                <li><a href="/contato/">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- =========================
+         MODAL DE IMAGEM
+    ========================== -->
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img id="modalImg" src="">
+    </div>
+
+    <!-- =========================
+         SCRIPT MODAL
+    ========================== -->
+
+    <script>
+        function openModal(src){
+            const modal = document.getElementById("imageModal");
+            const img = document.getElementById("modalImg");
+
+            modal.style.display = "flex";
+            img.src = src;
+        }
+
+        function closeModal(){
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

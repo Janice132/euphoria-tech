@@ -3,57 +3,139 @@
 
 {% block content %}
 
+<!-- HERO -->
 <section class="hero">
 
-    <div class="hero-texto">
+    <div class="hero-container equipe-hero">
 
-        <h1>Nossa Equipe</h1>
+        <div class="hero-texto">
 
-        <p>
-            Conheça as desenvolvedoras responsáveis pelos projetos e soluções da Euphoria Tech.
-        </p>
+            <div class="hero-badge">
+                EQUIPE • DESENVOLVIMENTO • DESIGN • ESTRATÉGIA DIGITAL
+            </div>
 
-        <a href="/contato/" class="botao">
-            Entrar em Contato
-        </a>
+            <h1>
+                O time que constrói produtos digitais com foco em performance e experiência.
+            </h1>
+
+            <p>
+                Nossa equipe atua no desenvolvimento de sistemas, interfaces e soluções digitais
+                voltadas para empresas, projetos e experiências modernas. Unimos tecnologia,
+                design e organização para construir plataformas eficientes, intuitivas e escaláveis.
+            </p>
+
+            <a href="/contato/" class="botao">
+                Entrar em Contato
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
-<section style="display:flex; justify-content:center; gap:80px; flex-wrap:wrap; text-align:center;">
+<!-- EQUIPE -->
+<section class="equipe-section">
 
-    <!-- Bárbara Wmaiara -->
-    <div>
+    <div class="container">
 
-        <img src="{% static 'img/dev1.jpg' %}" class="foto-equipe">
+        <div class="section-tag">
+            PROFISSIONAIS
+        </div>
 
-        <h3>Bárbara Wmaiara</h3>
+        <h2 style="text-align:center;">
+            Especialistas em desenvolvimento, experiência digital e soluções web.
+        </h2>
 
-        <p style="color:#cbd5e1; max-width:320px;">
-            Desenvolvedora Full Stack • Analista de Sistemas e Testes<br><br>
-
-            Atua na análise de requisitos, planejamento estrutural do sistema e desenvolvimento das funcionalidades da aplicação.<br><br>
-
-            Também é responsável pelos processos de validação e testes, garantindo qualidade, estabilidade e desempenho das soluções.
+        <p class="equipe-desc">
+            Cada integrante atua em áreas estratégicas do projeto, contribuindo
+            para o desenvolvimento de plataformas modernas, organizadas e alinhadas
+            às necessidades do mercado digital.
         </p>
 
-    </div>
+        <div class="equipe-grid-page">
 
-    <!-- Janice Damos -->
-    <div>
+            <!-- BÁRBARA -->
 
-        <img src="{% static 'img/dev2.jpg' %}" class="foto-equipe">
+            <div class="team-card-page">
 
-        <h3>Janice Damos</h3>
+                <div class="team-image-area">
 
-        <p style="color:#cbd5e1; max-width:320px;">
-            Desenvolvedora Full Stack • UI/UX Designer<br><br>
+                    <div class="team-glow"></div>
 
-            Responsável pelo front-end, back-end e criação de interfaces modernas e intuitivas.<br><br>
+                    <img src="{% static 'img/dev1.jpg' %}" class="foto-equipe-page">
 
-            Atua na experiência do usuário, prototipação, estrutura visual e implementação das soluções do sistema.
-        </p>
+                </div>
+
+                <div class="team-content">
+
+                    <span class="team-role">
+                        Full Stack • Systems Analyst
+                    </span>
+
+                    <h3>
+                        Bárbara Wmaiara
+                    </h3>
+
+                    <p>
+                        Atua no desenvolvimento estrutural dos sistemas, análise funcional
+                        e validação técnica das aplicações. Participa da construção da lógica
+                        operacional, organização dos processos internos e estabilidade das soluções digitais.
+                    </p>
+
+                    <div class="team-tags">
+
+                        <span>Back-end</span>
+                        <span>Arquitetura</span>
+                        <span>Testes</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- JANICE -->
+
+            <div class="team-card-page">
+
+                <div class="team-image-area">
+
+                    <div class="team-glow"></div>
+
+                    <img src="{% static 'img/dev2.jpg' %}" class="foto-equipe-page">
+
+                </div>
+
+                <div class="team-content">
+
+                    <span class="team-role">
+                        Full Stack • UI/UX Designer
+                    </span>
+
+                    <h3>
+                        Janice Damos
+                    </h3>
+
+                    <p>
+                        Responsável pela experiência visual, interfaces e implementação front-end
+                        das plataformas. Atua no design estratégico das aplicações, organização
+                        da navegação e construção de experiências digitais modernas e intuitivas.
+                    </p>
+
+                    <div class="team-tags">
+
+                        <span>UI/UX</span>
+                        <span>Front-end</span>
+                        <span>Design System</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 

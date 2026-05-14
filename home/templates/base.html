@@ -39,8 +39,8 @@
             <ul class="menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/equipe/">Equipe</a></li>
-                <li><a href="/processos/">Processos</a></li>
                 <li><a href="/ciclo-vida/">Ciclo de Vida</a></li>
+                <li><a href="/processos/">Processos</a></li>
                 <li><a href="/work/">Works</a></li>
                 <li><a href="/contato/">Contato</a></li>
             </ul>
@@ -50,6 +50,30 @@
 
     {% block content %}
     {% endblock %}
+
+    <!-- =========================
+         FOOTER PREMIUM
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-glow"></div>
+
+        <div class="footer-content">
+
+            <h3>Euphoria Tech</h3>
+
+            <p>
+                Criando soluções digitais modernas, experiências inteligentes e interfaces de alto impacto.
+            </p>
+
+            <div class="footer-copy">
+                © 2026 Euphoria Tech. Todos os direitos reservados.
+            </div>
+
+        </div>
+
+    </footer>
 
     <!-- =========================
          MODAL DE IMAGEM
@@ -76,6 +100,40 @@
             document.getElementById("imageModal").style.display = "none";
         }
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const elements = document.querySelectorAll("section, .sobre-card, .stat-card, .work-card, .team-card, .contato-form");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("active");
+            }
+        });
+    }, { threshold: 0.12 });
+
+    elements.forEach(el => {
+        el.classList.add("reveal");
+        observer.observe(el);
+    });
+
+});
+</script>
+
+<script>
+window.addEventListener("scroll", function(){
+    const nav = document.querySelector(".navbar");
+
+    if(window.scrollY > 20){
+        nav.classList.add("scrolled");
+    } else {
+        nav.classList.remove("scrolled");
+    }
+});
+</script>
+
 
 </body>
 

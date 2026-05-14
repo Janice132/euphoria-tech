@@ -4,108 +4,237 @@
 {% block content %}
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero work-hero">
 
-    <div class="hero-texto">
+    <div class="hero-container work-hero-container">
 
-        <h1>work</h1>
+        <div class="hero-texto work-hero-texto">
 
-        <p>
-            Projetos desenvolvidos com foco em tecnologia, experiência do usuário e soluções digitais modernas.
-        </p>
+            <div class="hero-badge">
+                SOLUÇÕES DIGITAIS • UX/UI • PERFORMANCE • ESCALABILIDADE
+            </div>
 
-        <a href="/contato/" class="botao">
-            Solicitar Projeto
-        </a>
+            <h1>
+                Works
+            </h1>
 
-    </div>
+            <p>
+                Desenvolvemos soluções digitais modernas voltadas para desempenho,
+                experiência do usuário e evolução contínua. Criamos sistemas,
+                interfaces e arquiteturas tecnológicas com foco em clareza visual,
+                estabilidade e inovação.
+            </p>
 
-</section>
+            <div class="hero-buttons">
 
-<!-- PROJETO 1 -->
-<section style="display:flex; align-items:center; justify-content:center; gap:70px; flex-wrap:wrap;">
+                <a href="/contato/" class="botao">
+                    Solicitar Projeto
+                </a>
 
-    <div style="flex:1; min-width:320px; max-width:520px;">
+            </div>
 
-        <h2>Sistemas Web</h2>
+            <div class="hero-mini-info">
 
-        <p style="color:#cbd5e1; margin-top:20px; font-size:18px; line-height:1.8;">
-            Desenvolvimento de aplicações modernas com foco em desempenho e experiência do usuário.
-        </p>
+                <div class="mini-card">
+                    <h3>Web Apps</h3>
+                    <span>
+                        Plataformas modernas e inteligentes
+                    </span>
+                </div>
 
-    </div>
+                <div class="mini-card">
+                    <h3>UX/UI</h3>
+                    <span>
+                        Interfaces focadas em experiência
+                    </span>
+                </div>
 
-    <div style="flex:1; min-width:320px; max-width:500px;">
+                <div class="mini-card">
+                    <h3>Arquitetura</h3>
+                    <span>
+                        Estrutura escalável e organizada
+                    </span>
+                </div>
 
-        <img src="{% static 'img/photo1.jpg' %}"
-             class="work-img"
-             style="height:auto;"
-             onclick="openModal(this.src)">
+            </div>
 
-    </div>
+        </div>
 
-</section>
-
-<!-- PROJETO 2 -->
-<section style="display:flex; align-items:center; justify-content:center; gap:70px; flex-wrap:wrap; background:#111827;">
-
-    <div style="flex:1; min-width:320px; max-width:500px;">
-
-        <img src="{% static 'img/photo2.jpg' %}"
-             class="work-img"
-             style="height:auto;"
-             onclick="openModal(this.src)">
-
-    </div>
-
-    <div style="flex:1; min-width:320px; max-width:520px;">
-
-        <h2>UX/UI Design</h2>
-
-        <p style="color:#cbd5e1; margin-top:20px; font-size:18px; line-height:1.8;">
-            Interfaces modernas focadas em experiência do usuário.
-        </p>
+        
 
     </div>
 
 </section>
 
-<!-- PROJETO 3 -->
-<section style="display:flex; align-items:center; justify-content:center; gap:70px; flex-wrap:wrap;">
+<!-- SISTEMAS -->
+<section class="work-section">
 
-    <div style="flex:1; min-width:320px; max-width:520px;">
+    <div class="work-layout">
 
-        <h2>Arquitetura e Desenvolvimento</h2>
+        <div class="work-content">
 
-        <p style="color:#cbd5e1; margin-top:20px; font-size:18px; line-height:1.8;">
-            Estruturação de sistemas modernos e escaláveis.
-        </p>
+            <div class="work-tag">
+                Desenvolvimento Web
+            </div>
+
+            <h2>
+                Sistemas Inteligentes & Plataformas Web
+            </h2>
+
+            <p>
+                Construímos aplicações modernas voltadas para automação,
+                gerenciamento de informações, organização de processos
+                e experiências digitais fluidas. Os sistemas são
+                desenvolvidos com foco em estabilidade, desempenho
+                e escalabilidade contínua.
+            </p>
+
+            <div class="work-features">
+
+                <span>Painéis Administrativos</span>
+                <span>Automação</span>
+                <span>Responsividade</span>
+                <span>Integrações</span>
+
+            </div>
+
+        </div>
+
+        <div class="work-image-box">
+
+            <div class="work-image-glow"></div>
+
+            <img src="{% static 'img/photo1.jpg' %}"
+                 class="work-showcase-img"
+                 onclick="openModal(this.src)">
+
+        </div>
 
     </div>
 
-    <div style="flex:1; min-width:320px; max-width:500px;">
+</section>
 
-        <img src="{% static 'img/photo3.jpg' %}"
-             class="work-img"
-             style="height:auto;"
-             onclick="openModal(this.src)">
+<!-- UX/UI -->
+<section class="work-section work-section-alt">
+
+    <div class="work-layout reverse">
+
+        <div class="work-image-box">
+
+            <div class="work-image-glow"></div>
+
+            <img src="{% static 'img/photo2.jpg' %}"
+                 class="work-showcase-img"
+                 onclick="openModal(this.src)">
+
+        </div>
+
+        <div class="work-content">
+
+            <div class="work-tag">
+                UX/UI Design
+            </div>
+
+            <h2>
+                Experiências Digitais Premium
+            </h2>
+
+            <p>
+                Desenvolvemos interfaces modernas focadas em clareza visual,
+                usabilidade e fluidez de navegação. Cada elemento é pensado
+                para criar experiências intuitivas, elegantes e alinhadas
+                à identidade digital do projeto.
+            </p>
+
+            <div class="work-features">
+
+                <span>UI Moderna</span>
+                <span>Fluxos Inteligentes</span>
+                <span>Experiência do Usuário</span>
+                <span>Design Responsivo</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ARQUITETURA -->
+<section class="work-section">
+
+    <div class="work-layout">
+
+        <div class="work-content">
+
+            <div class="work-tag">
+                Arquitetura & Engenharia
+            </div>
+
+            <h2>
+                Estruturação de Sistemas Escaláveis
+            </h2>
+
+            <p>
+                Projetamos arquiteturas organizadas para facilitar manutenção,
+                crescimento e evolução contínua dos sistemas. Trabalhamos com
+                desenvolvimento estruturado, versionamento e tecnologias modernas
+                para garantir confiabilidade operacional.
+            </p>
+
+            <div class="work-features">
+
+                <span>Django</span>
+                <span>Python</span>
+                <span>Git</span>
+                <span>Estrutura Modular</span>
+
+            </div>
+
+        </div>
+
+        <div class="work-image-box">
+
+            <div class="work-image-glow"></div>
+
+            <img src="{% static 'img/photo3.jpg' %}"
+                 class="work-showcase-img"
+                 onclick="openModal(this.src)">
+
+        </div>
 
     </div>
 
 </section>
 
 <!-- CTA -->
-<section style="text-align:center;">
+<section class="work-cta">
 
-    <h2>Vamos desenvolver algo inovador?</h2>
+    <div class="work-cta-box">
 
-    <p style="color:#cbd5e1;">
-        Entre em contato e transforme sua ideia em uma solução digital moderna.
-    </p>
+        <div class="work-cta-text">
 
-    <a href="/contato/" class="botao">
-        Fale Conosco
-    </a>
+            <div class="work-tag">
+                Inovação Digital
+            </div>
+
+            <h2>
+                Vamos transformar sua ideia em uma solução moderna?
+            </h2>
+
+            <p>
+                Criamos soluções digitais com foco em tecnologia,
+                experiência visual, desempenho e evolução contínua.
+            </p>
+
+        </div>
+
+        <a href="/contato/" class="botao work-cta-button">
+            Fale Conosco
+        </a>
+
+    </div>
 
 </section>
 

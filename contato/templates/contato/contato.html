@@ -2,77 +2,52 @@
 
 {% block content %}
 
-<section class="hero">
+<section class="contato-hero">
 
-    <div class="hero-texto">
+    <div class="contato-hero-glow"></div>
 
-        <h1>Contato</h1>
+    <div class="hero-texto contato-hero-texto">
+
+        <span class="section-tag">EUPHORIA TECH</span>
+
+        <h1>Vamos construir algo incrível</h1>
 
         <p>
-            Envie sua ideia ou solicitação. Nossa equipe retornará em breve com uma proposta.
+            Envie sua ideia, projeto ou necessidade digital.  
+            Nossa equipe irá analisar e retornar com a melhor solução para você.
         </p>
 
     </div>
-
 </section>
 
-<!-- FORMULÁRIO MODERNO -->
-<section style="display:flex; justify-content:center; padding:60px 20px;">
+<section class="contato-container">
 
-    <form style="
-        width:100%;
-        max-width:650px;
-        display:flex;
-        flex-direction:column;
-        gap:18px;
-        background:rgba(255,255,255,0.03);
-        padding:40px;
-        border-radius:16px;
-        border:1px solid rgba(255,255,255,0.08);
-        backdrop-filter: blur(10px);
-    ">
+    <form class="contato-form">
 
-        <h2 style="margin-bottom:10px;">Fale com a gente</h2>
+        <h2>Fale com a gente</h2>
 
-        <input type="text" placeholder="Nome completo" style="
-            padding:15px;
-            border-radius:10px;
-            border:1px solid rgba(255,255,255,0.1);
-            background:#0f172a;
-            color:white;
-            outline:none;
-        ">
+        <div class="input-group">
+            <input type="text" required>
+            <label>Nome completo</label>
+        </div>
 
-        <input type="email" placeholder="E-mail" style="
-            padding:15px;
-            border-radius:10px;
-            border:1px solid rgba(255,255,255,0.1);
-            background:#0f172a;
-            color:white;
-            outline:none;
-        ">
+        <div class="input-group">
+            <input type="email" required>
+            <label>E-mail corporativo</label>
+        </div>
 
-        <input type="text" placeholder="Telefone (opcional)" style="
-            padding:15px;
-            border-radius:10px;
-            border:1px solid rgba(255,255,255,0.1);
-            background:#0f172a;
-            color:white;
-            outline:none;
-        ">
+        <div class="input-group">
+            <input type="text">
+            <label>Telefone (opcional)</label>
+        </div>
 
-        <textarea rows="6" placeholder="Descreva seu projeto" style="
-            padding:15px;
-            border-radius:10px;
-            border:1px solid rgba(255,255,255,0.1);
-            background:#0f172a;
-            color:white;
-            outline:none;
-            resize:none;
-        "></textarea>
+        <div class="input-group">
+            <textarea rows="6" required></textarea>
+            <label>Descreva seu projeto</label>
+        </div>
 
-        <button type="submit" class="botao" style="width:100%;">
-            Enviar Mensagem
+        <button type="submit" class="botao btn-contato">
+            Enviar mensagem
         </button>
 
     </form>
